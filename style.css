@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: antiquewhite;
+    background-color: #ffffff    ;
     padding: 0px;
 }
 
@@ -9,7 +9,7 @@ html, body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 

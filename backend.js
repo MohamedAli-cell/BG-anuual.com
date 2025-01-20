@@ -1,8 +1,13 @@
 var dictionary = new Map();
+var oldSalary = new Map();
+dictionary.set("01155939621", 0.3);
+dictionary.set("01113176315", 0.2);
+dictionary.set("01021870254", 0.1);
 
-dictionary.set("01155939621", "mohamed");
-dictionary.set("01113176315", "mahmoudatta");
-dictionary.set("01021870254", "mohamed busisness");
+oldSalary.set("01155939621", 13000);
+oldSalary.set("01113176315", 9000);
+oldSalary.set("01021870254", 10000);
+
 
 function clickSubmit() 
 {
@@ -14,7 +19,7 @@ function clickSubmit()
         if (key == input) {
             flag = false;
             // Redirect to a new page with the value
-            document.body.innerHTML = `<h1>${value}</h1>`;
+            document.body.innerHTML = `<h1>Salary increased ${value *100}% <br> your new Salary is ${(value * oldSalary.get(key)) + oldSalary.get(key)} EGP</h1>`;
         }
     });
     if(flag)
